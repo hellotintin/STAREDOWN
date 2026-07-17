@@ -6,19 +6,14 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [Header("References")]
-    [Tooltip("Drag the VR headset camera here (XR Origin > Camera Offset > Main Camera)")]
     public Transform playerCamera;
 
     [Header("Gaze Detection")]
-    [Tooltip("How far the player can see the enemy for the freeze check")]
     public float sightRange = 50f;
-    [Tooltip("Layers the sight raycast should collide with (Enemy + Environment)")]
     public LayerMask sightMask;
 
     [Header("Audio")]
-    [Tooltip("Distance at which the audio is loudest")]
     public float minAudioDistance = 1.5f;
-    [Tooltip("Distance at which the audio fades to nothing")]
     public float maxAudioDistance = 25f;
     public float minVolume = 0.05f;
     public float maxVolume = 1f;
